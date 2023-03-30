@@ -10,7 +10,7 @@ data() {
             },
             {
                 text: 'learn CSS',
-                done: true
+                done: false
             },
             {
                 text: 'learn JS',
