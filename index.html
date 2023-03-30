@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue To Do List</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <div class="title">
+            <h1>TO DO LIST</h1>
+        </div>
+
+        <div class="addtasks">
+            <ul v-if="tasks.length > 0">
+                <li v-for="task in tasks ">
+                    {{ task.text }} {{ task.done }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="tasks">
+
+        </div>
+
+
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
