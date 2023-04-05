@@ -1,5 +1,28 @@
+#app {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: orangered;
+}
+
+input {
+    padding: 0.4rem;
+}
+
+button {
+    background-color: darkorchid;
+    border: 0px;
+    padding: 0.5rem;
+}
+
 .strikeout {
     text-decoration: line-through;
+}
+
+ul {
+    list-style: none;
 }
 
 li {

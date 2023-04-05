@@ -20,13 +20,15 @@
         </div>
 
         <div class="addtasks">
+            <input type="text" v-model.trim="newTask" @keyup.enter="addTask()" placeholder="Add a thing to do">
+            <button @click="addTask()">AGGIUNGI</button>
         </div>
         
         <div class="tasks">
             <ul v-if="tasks.length > 0">
                 <li v-for="(task, index) in tasks" :class="{strikeout: task.done}">
                     {{ task.text }}
-                    <i class="fa-regular fa-circle-xmark fa-xl" @click="removeTask(index)"></i>
+                    <i class="fa-regular fa-circle-xmark fa-l" @click="removeTask(index)"></i>
                 </li>
 
             </ul>
